@@ -5,8 +5,8 @@ Follow these directions to create your own website or blog using github pages an
 ~~~~
 pip install pelican markdown
 ~~~~
-### 2) Create your own blog folder name:{yourblog} on your computer
-All contents should be inside of this folder. When you run a pelican command later on in these instructions, it should be run in this folder using the terminal.
+### 2) Create your own blog folder on your computer
+You can name it whatever you want - all files related to your blog should be inside of this folder. When you run a pelican command later on in these instructions, it should be run in this folder using the terminal.
 
 ### 3) Download this repository into your blog folder
 Using either git pull or downloading the zip file
@@ -24,7 +24,9 @@ pelican content
 ~~~~
 This runs the pelican software on everything inside yourblog/content folder, converting markdown files into html. This makes updating your pages much quicker and easier than rewriting HTML code.
 
-Open your index.html in the blog's output folder to see the new changes
+Ever time you run 'pelican content,' the your blog's output folder will be updated. So even if you delete the folder, you can always regenerate it by running that command. That is the power or pelican!
+
+Open your index.html in the output folder to see the new changes
 
 ### 7) Upload to your github.io site
 Follow the directions on creating your own github.io site at Github Pages, which should be very quick and easy. Once you commit everything in your blog's output folder to your new GitHub repository (which can be done with the a git push or simply by dragging the files), your new website should be up and running online within the minute!
