@@ -17,6 +17,12 @@ Open this file using a web browser. This allows you to see the default webpage I
 ### 5) Make changes to files within yourblog/content
 This allows you to customize your website
 
+Files in the 'Pages' folder can be set to automatically be displayed in the menu bar - they do not have multiple posts, just one static page. Usually for content that won't change, such as contact info.
+
+Categories help group files of the same subject. Categories can be by grouping files in the same folder or by setting the category within the file. Categories can also be customized to be on the menu bar. This helps you organize your posts, and separate static pages with blogs.
+
+More tips can be found [here](http://docs.getpelican.com/en/3.6.3/tips.html).
+
 ### 6) Test changes
 Do this by running the following code in your Terminal, located in your blog folder
 ~~~~
