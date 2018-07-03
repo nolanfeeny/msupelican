@@ -6,7 +6,7 @@ In order to make your blog your own, you must follow these steps:
 
 1. go to 'pelicanconf.py' in your content folder
 
-2. Edit the following:
+2. Edit the following:  
 AUTHOR = ''yourname"  
 SITE = "Your Site Name"  
 LINKS = ('Text', 'link to any of your sites')  *optional*
