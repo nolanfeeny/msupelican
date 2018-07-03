@@ -6,4 +6,7 @@ First post, which can be used for a blog, research paper, or general news update
 
 Here's a sample picture of Lake Michigan:
 
-![lek michigen]({attach}../images/michigan.JPG)
+![lake michigen]({attach}../images/michigan.JPG)
+
+This file is located at msupelican/content/Blog/firstpost.md and is written as a markdown file.   
+

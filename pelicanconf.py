@@ -5,8 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = 'authorname'
 SITENAME = "Author Name"
 SITEURL = ''
-
 PATH = 'content'
+
+
+# Following items are often useful when publishinu
+#DISQUS_SITENAME = "DISQUS SITE NAME"
+#GOOGLE_ANALYTICS = "UA-XXXXXXXXX-X"
 
 
 #PLUGIN_PATHS=["./plugins"]
@@ -25,10 +29,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-#LINKS = (('Pelican', 'http://getpelican.com/'),
-#         ('Python.org', 'http://python.org/'),
-#         ('Jinja2', 'http://jinja.pocoo.org/'),
-#         ('You can modify those links in your config file', '#'),)
+LINKS = (('CMSE', 'http://cmse.msu.edu'),
+         ('MSU', 'http://www.msu.edu/'))
 
 # Social widget
 #SOCIAL = (('You can add links in your config file', '#'),
