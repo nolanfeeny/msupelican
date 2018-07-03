@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'authorname'
-SITENAME = "Author Name"
+SITENAME = "CMSE Pelican/Github.io tutorial"
 SITEURL = ''
 PATH = 'content'
 
