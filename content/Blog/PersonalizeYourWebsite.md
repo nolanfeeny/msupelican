@@ -1,7 +1,7 @@
 Title: Personalize Your Website 
 Date: 2018-06-01 
 
-Now tha that you have a website it is time to make it your own.  First thing you can do is edit the ```pelican.conf``` file.  This file is used to set some variables related to your website.  Read through the file and change what you think is approprite Specifically change the following lines of code:
+Now that you have a website it is time to make it your own.  First thing you can do is edit the ```pelican.conf``` file.  This file is used to set some variables related to your website.  Read through the file and change what you think is appropriate Specifically change the following lines of code:
 
 ```
 AUTHOR = 'authorname'

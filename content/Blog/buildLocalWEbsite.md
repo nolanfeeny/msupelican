@@ -7,7 +7,7 @@ Once you have installed the required software and downloaded the repository, you
 
 ```make serve```
 
-If the above dosn't work it probably means you don't have make installed.  You can use the following commands instead:
+If the above doesn't work it probably means you don't have make installed.  You can use the following commands instead:
 
 ``` pelican content ```
 

@@ -1,7 +1,7 @@
 Title: Adding Comments to your Blog
 Date: 2017-07-01
 
-Eventhough pelican generates static websites you can still have dynamic comments using a third party service called Disqus. 
+Even though pelican generates static websites you can still have dynamic comments using a third party service called Disqus. 
 
 1. First, create a Disqus account [here](//disqus.com/admin/create/)
 2. Once you have a Disqus account create a "new site" and point it to your github.io website.  Remember the site name you used.
