@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CMSE Pelican/Github.io tutorial - Blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2018-07-02T00:00:00-04:00</updated><entry><title>Installing the Software</title><link href="/installing-the-software.html" rel="alternate"></link><published>2018-07-02T00:00:00-04:00</published><updated>2018-07-02T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-07-02:/installing-the-software.html</id><summary type="html">&lt;p&gt;Before you start you will need to download some software. Pelican is based on python and github.io uses git.  &lt;/p&gt;
+&lt;p&gt;We recommend using the Anaconda install for python.  You can download the installer &lt;a href=""&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once Anaconda is installed you can use the installers to install the rest of what you …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Before you start you will need to download some software. Pelican is based on python and github.io uses git.  &lt;/p&gt;
+&lt;p&gt;We recommend using the Anaconda install for python.  You can download the installer &lt;a href=""&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once Anaconda is installed you can use the installers to install the rest of what you need:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;conda install git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pip install pelican&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pip install markdown&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;Now you should be able to clone this repository using the following commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone https://xxx.xxxxx.github.com//&lt;/code&gt;&lt;/p&gt;</content></entry><entry><title>Building your website</title><link href="/building-your-website.html" rel="alternate"></link><published>2018-07-01T00:00:00-04:00</published><updated>2018-07-01T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-07-01:/building-your-website.html</id><summary type="html">&lt;p&gt;Once you have installed the required software and downloaded the repository, you should be able to now get this site running on your local machine. First change to the msupelican directory and run the following commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the above doesn't work it probably means you don't …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Once you have installed the required software and downloaded the repository, you should be able to now get this site running on your local machine. First change to the msupelican directory and run the following commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;make html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;make serve&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the above doesn't work it probably means you don't have make installed.  You can use the following commands instead:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pelican content&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd output &amp;amp;&amp;amp; python -m pelican.server&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To connect to the local site you can use the following URL:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://localhost:8000"&gt;http://localhost:8000&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You are ready to start editing... &lt;/p&gt;</content></entry><entry><title>Making your github.io repository</title><link href="/making-your-githubio-repository.html" rel="alternate"></link><published>2018-07-01T00:00:00-04:00</published><updated>2018-07-01T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-07-01:/making-your-githubio-repository.html</id><summary type="html">&lt;p&gt;Running Pelican creates an output folder with your static website. The next step is to take the contents of this folder and put it in a git repostiory named user.github.io where user is your github user name. That should be it.  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First you need a github account. You …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Running Pelican creates an output folder with your static website. The next step is to take the contents of this folder and put it in a git repostiory named user.github.io where user is your github user name. That should be it.  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First you need a github account. You can Create a github account here.&lt;/li&gt;
+&lt;li&gt;Second, create a repository named user.github.io.  &lt;/li&gt;
+&lt;li&gt;Add the contents of output to the user.github.io repository&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you are new to github you may just want to drag and drop the contents of your output directory into "add files" s &lt;/p&gt;</content></entry><entry><title>Personalize Your Website</title><link href="/personalize-your-website.html" rel="alternate"></link><published>2018-06-01T00:00:00-04:00</published><updated>2018-06-01T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-06-01:/personalize-your-website.html</id><summary type="html">&lt;p&gt;Now that you have a website it is time to make it your own.  First thing you can do is edit the &lt;code&gt;pelican.conf&lt;/code&gt; file.  This file is used to set some variables related to your website.  Read through the file and change what you think is appropriate Specifically change …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Now that you have a website it is time to make it your own.  First thing you can do is edit the &lt;code&gt;pelican.conf&lt;/code&gt; file.  This file is used to set some variables related to your website.  Read through the file and change what you think is appropriate Specifically change the following lines of code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;AUTHOR = &amp;#39;authorname&amp;#39;
+SITENAME = &amp;quot;CMSE Pelican/Github.io tutorial&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use your name and your website.  Now just remake your repository using the make or pelican commands and view your changes on the local machine:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make html
+make serve
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once you are happy with the changes copy the contents of output to your user.github.io repository and push your changes to github.&lt;/p&gt;</content></entry><entry><title>Markdown File Tips &amp; Tricks</title><link href="/markdown-file-tips-tricks.html" rel="alternate"></link><published>2018-05-31T00:00:00-04:00</published><updated>2018-05-31T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-05-31:/markdown-file-tips-tricks.html</id><summary type="html">&lt;p&gt;You will probably be using markdown files to write your blogs. They are nice because they give you more freedom than simple text files, and are easier to work with than HTML files. However, you can still use raw HTML in your files and it'll work pretty well, which is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;You will probably be using markdown files to write your blogs. They are nice because they give you more freedom than simple text files, and are easier to work with than HTML files. However, you can still use raw HTML in your files and it'll work pretty well, which is great for inserting more customized download links or files.&lt;/p&gt;
+&lt;p&gt;Here's a cheatsheet of good things to know:&lt;/p&gt;
+&lt;p&gt;Headers:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;H1&lt;/h1&gt;
+&lt;h2&gt;H2&lt;/h2&gt;
+&lt;h3&gt;H3&lt;/h3&gt;
+&lt;h4&gt;H4&lt;/h4&gt;
+&lt;h5&gt;H5&lt;/h5&gt;
+&lt;h6&gt;H6&lt;/h6&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*italics*
+**bold**
+**_italics and bold_**
+~~scratched text~~
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;italics&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;bold&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;&lt;em&gt;italics and bold&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;
+~~scratched text~~&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[I&amp;#39;m an inline-style link](https://www.google.com)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="https://www.google.com"&gt;I'm an inline-style link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Image&lt;br&gt;
+&lt;code&gt;![lake michigan]({attach}../images/michigan.JPG)&lt;/code&gt;
+&lt;img alt="lake michigan" src="/michigan.JPG"&gt;&lt;/p&gt;</content></entry><entry><title>Making Additional Websites</title><link href="/making-additional-websites.html" rel="alternate"></link><published>2018-05-30T00:00:00-04:00</published><updated>2018-05-30T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-05-30:/making-additional-websites.html</id><summary type="html">&lt;h3&gt;Github Pages allows you to make unlimited websites linked to other repository projects.&lt;/h3&gt;
+&lt;h3&gt;For example, you have your main website &lt;em&gt;user&lt;/em&gt;.github.io&lt;/h3&gt;
+&lt;h3&gt;If you have a separate github repository &lt;em&gt;projectrepo&lt;/em&gt;, you can make a project column by going to the 'Projects' header and creating a new column. It can …&lt;/h3&gt;</summary><content type="html">&lt;h3&gt;Github Pages allows you to make unlimited websites linked to other repository projects.&lt;/h3&gt;
+&lt;h3&gt;For example, you have your main website &lt;em&gt;user&lt;/em&gt;.github.io&lt;/h3&gt;
+&lt;h3&gt;If you have a separate github repository &lt;em&gt;projectrepo&lt;/em&gt;, you can make a project column by going to the 'Projects' header and creating a new column. It can be empty.&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="project" src="/images/project.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Then, go to the 'settings' header and enable Github pages using the master branch.&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="settings" src="/images/projsettings.png"&gt;&lt;/p&gt;
+&lt;h3&gt;Now your html files in that repository should show up here:&lt;/h3&gt;
+&lt;h3&gt;https://&lt;em&gt;user&lt;/em&gt;.github.io/&lt;em&gt;projectrepo&lt;/em&gt;&lt;/h3&gt;</content></entry><entry><title>First Post</title><link href="/first-post.html" rel="alternate"></link><published>2018-05-29T12:34:00-04:00</published><updated>2018-05-29T12:34:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2018-05-29:/first-post.html</id><summary type="html">&lt;p&gt;This is a sample post: you can post anything you want, e.g. for a blog, research paper, or general news update.&lt;/p&gt;
+&lt;p&gt;Here's a sample picture of Lake Michigan:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="lake michigen" src="/michigan.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;This file is located at msupelican/content/Blog/firstpost.md and is written as a markdown file.&lt;/p&gt;
+&lt;p&gt;You probably will want …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is a sample post: you can post anything you want, e.g. for a blog, research paper, or general news update.&lt;/p&gt;
+&lt;p&gt;Here's a sample picture of Lake Michigan:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="lake michigen" src="/michigan.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;This file is located at msupelican/content/Blog/firstpost.md and is written as a markdown file.&lt;/p&gt;
+&lt;p&gt;You probably will want to delete the file once you make your own blog posts.&lt;/p&gt;</content><category term="article"></category><category term="news"></category><category term="first"></category></entry><entry><title>Adding Google Analytics to your site</title><link href="/adding-google-analytics-to-your-site.html" rel="alternate"></link><published>2017-07-02T00:00:00-04:00</published><updated>2017-07-02T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2017-07-02:/adding-google-analytics-to-your-site.html</id><summary type="html">&lt;p&gt;Google Analytics allows you to track the traffic on your website.  &lt;/p&gt;
+&lt;p&gt;1 . First, create a Disqus account &lt;a href="//disqus.com/admin/create/"&gt;here&lt;/a&gt;
+2. Once you have a Disqus account create a "new site" and point it to your github.io website.  Remember the site name you used.
+3. Open up the pelican.conf file …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Google Analytics allows you to track the traffic on your website.  &lt;/p&gt;
+&lt;p&gt;1 . First, create a Disqus account &lt;a href="//disqus.com/admin/create/"&gt;here&lt;/a&gt;
+2. Once you have a Disqus account create a "new site" and point it to your github.io website.  Remember the site name you used.
+3. Open up the pelican.conf file and uncomment the following line and add your site name to the script.&lt;/p&gt;
+&lt;p&gt;DISQUS_SITENAME = "YOUR SITE NAME"&lt;/p&gt;
+&lt;p&gt;That should be it. Run Pelican and push your changes to your github.io repository and you should now see comments  &lt;/p&gt;</content></entry><entry><title>Adding Comments to your Blog</title><link href="/adding-comments-to-your-blog.html" rel="alternate"></link><published>2017-07-01T00:00:00-04:00</published><updated>2017-07-01T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2017-07-01:/adding-comments-to-your-blog.html</id><summary type="html">&lt;p&gt;Even though pelican generates static websites you can still have dynamic comments using a third party service called Disqus. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, create a Disqus account &lt;a href="//disqus.com/admin/create/"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Once you have a Disqus account create a "new site" and point it to your github.io website.  Remember the site name you used.&lt;/li&gt;
+&lt;li&gt;Open …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Even though pelican generates static websites you can still have dynamic comments using a third party service called Disqus. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, create a Disqus account &lt;a href="//disqus.com/admin/create/"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Once you have a Disqus account create a "new site" and point it to your github.io website.  Remember the site name you used.&lt;/li&gt;
+&lt;li&gt;Open up the pelican.conf file and uncomment the following line and add your site name to the script.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;DISQUS_SITENAME = "YOUR SITE NAME"&lt;/p&gt;
+&lt;p&gt;That should be it. Run Pelican and push your changes to your github.io repository and you should now see comments  &lt;/p&gt;</content></entry><entry><title>Connecting your Blog to Social Media</title><link href="/connecting-your-blog-to-social-media.html" rel="alternate"></link><published>2017-07-01T00:00:00-04:00</published><updated>2017-07-01T00:00:00-04:00</updated><author><name>authorname</name></author><id>tag:None,2017-07-01:/connecting-your-blog-to-social-media.html</id><summary type="html">&lt;p&gt;Your blog can be used to automatically feed information into social media sites such as Twitter and facebook. This post will show you how to connect your github.io site to &lt;a href="//dlvrit.com/"&gt;dlvrit.com&lt;/a&gt;, a service which can read your blog and post entries into your social media outlets.  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Your blog can be used to automatically feed information into social media sites such as Twitter and facebook. This post will show you how to connect your github.io site to &lt;a href="//dlvrit.com/"&gt;dlvrit.com&lt;/a&gt;, a service which can read your blog and post entries into your social media outlets.  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an account in &lt;a href="//dlvrit.com/"&gt;dlvrit.com&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Copy the RSS Feed link in for your blog. &lt;/li&gt;
+&lt;li&gt;Paste the URL in dlrit.com and connect your social media.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That should be it. You do not need to change anything about your pelican post.&lt;/p&gt;</content></entry></feed>
